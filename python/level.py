@@ -1,4 +1,4 @@
-from python.listmanager import ListManager
+from listmanager import ListManager
 import random
 
 
@@ -36,6 +36,7 @@ class Level():
         '''
         Chooses a new word
         '''
+        self.refreshRequested = True
         if self.refreshRequested:
             self.currentHanyuDict = self.randomize()
             self.hanyu = self.currentHanyuDict['hanyu']
@@ -45,4 +46,11 @@ class Level():
             print("Something went wrong; A refresh was not requested")
 
         self.refreshRequested = False
+        return self.currentHanyuDict
+    
+    def reset_chosen(self):
+        '''
+        Resets the already chosen words list
+        '''
+        self.alreadychosen = []
 
