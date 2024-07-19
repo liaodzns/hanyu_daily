@@ -13,6 +13,50 @@
 } 
 
 .wotdButton {
+    margin-top: 2em;
     border: 1px solid #8D493A;
+    padding: 1em;
+    width: 5%;
+    border-radius: 0.5rem;
     color: #8D493A;
+    background-color: #f5e8de;
+}
+
+.wotdButton:hover {
+    color: #8D493A;
+    background-color: #cabfb6;
+}
+
+.level-selector select{
+    margin-top: 2em;
+    border: 1px solid #8D493A;
+    padding: 1em;
+    width: 50%;
+    border-radius: 0.5rem;
+    color: #8D493A;
+    background-color: #f5e8de;
+  }
+
+.word-container {
+    margin-top: 2em;
+}
+
+.word-container h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.word-container p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.resetButton {
+    margin-top: 2em;
+    border: 1px solid #8D493A;
+    padding: 1em;
+    width: 5%;
+    border-radius: 0.5rem;
+    color: #8D493A;
+    background-color: #f5e8de;
 }
