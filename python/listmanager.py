@@ -8,7 +8,10 @@ class ListManager():
         self.entries = None
 
     def parse(self, filename) -> list:
-        df = pd.read_csv(f"{cwd}/LevelLists/{filename}", usecols=['hanyu', 'pinyin', 'translation'])
+        base_path = os.path.dirname(__file__)
+        file_path = os.path.join(base_path, 'LevelLists', filename)
+        df = pd.read_csv(file_path, usecols=['hanyu', 'pinyin', 'translation'])
+        # df = pd.read_csv(f"{cwd}/LevelLists/{filename}", usecols=['hanyu', 'pinyin', 'translation'])
         result = df.to_dict(orient='records')
 
         self.entries = result
