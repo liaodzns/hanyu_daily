@@ -2,7 +2,7 @@ setup: env
 	pip install -r requirements.txt
 
 env:
-	python -m venv env
+	python3 -m venv env
 
 run_test: 
 	cd javascript && npm start
